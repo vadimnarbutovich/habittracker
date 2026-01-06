@@ -1,3 +1,23 @@
 Privacy Policy
 
-Our app does not collect users' personal data. If you have any questions or suggestions, please contact us at the following email address: habitstracker@yandex.ru
+Last updated: January 2026
+
+HabitsTracker respects your privacy.
+
+1) Data you create in the app
+Your habits, completion history, and reminder settings are stored locally on your device (Core Data). We do not require an account.
+
+2) Analytics
+We use AppMetrica to improve the stability and functionality of the app. AppMetrica may collect technical information and diagnostics (such as device type, OS version, app version, and crash/performance data). This information helps us understand and fix issues and improve the app.
+
+3) Notifications
+The app uses local notifications to remind you about habits. Notification permissions are managed by iOS settings.
+
+4) Import/Export
+If you export data, a file is created on your device and shared only when you choose to do so.
+
+5) Data deletion
+You can delete habits inside the app. Removing the app from your device removes locally stored data.
+
+6) Contact
+If you have questions, contact us: habitstracker@yandex.ru
