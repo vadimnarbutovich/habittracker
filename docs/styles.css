@@ -105,11 +105,31 @@ h1 { font-size: 44px; line-height: 1.05; margin: 0 0 10px; }
 .footer { padding: 26px 0; color: var(--muted); }
 
 @media (max-width: 900px) {
+  .container { padding: 16px; }
+
+  /* Навигация: переносим ссылки под название */
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .nav-links {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px 14px;
+  }
+
+  .nav-links a {
+    white-space: nowrap;
+  }
+
   .hero { grid-template-columns: 1fr; }
   .grid { grid-template-columns: 1fr; }
   h1 { font-size: 36px; }
 
-  /* Mobile: горизонтальный скролл скриншотов */
+  /* Скриншоты: горизонтальный скролл (как мы делали) */
   .screens {
     display: flex;
     gap: 12px;
