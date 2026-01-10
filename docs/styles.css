@@ -58,6 +58,8 @@ h1 { font-size: 44px; line-height: 1.05; margin: 0 0 10px; }
   background: linear-gradient(90deg, var(--accent1), var(--accent2));
 }
 .button.ghost { background: transparent; }
+
+/* ВАЖНО: если оставишь aria-disabled="true" на кнопке — она не будет кликабельной */
 .button[aria-disabled="true"] { opacity: 0.6; pointer-events: none; }
 
 .hero-media { display: flex; justify-content: center; }
@@ -87,6 +89,7 @@ h1 { font-size: 44px; line-height: 1.05; margin: 0 0 10px; }
 .card h3 { margin: 0 0 6px; font-size: 16px; }
 .card p { margin: 0; color: var(--muted); line-height: 1.45; }
 
+/* Desktop/tablet: сетка из 3 скриншотов */
 .screens {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -104,6 +107,20 @@ h1 { font-size: 44px; line-height: 1.05; margin: 0 0 10px; }
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; }
   .grid { grid-template-columns: 1fr; }
-  .screens { grid-template-columns: 1fr; }
   h1 { font-size: 36px; }
+
+  /* Mobile: горизонтальный скролл скриншотов */
+  .screens {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+
+  .screens img {
+    flex: 0 0 78%;
+    scroll-snap-align: start;
+  }
 }
