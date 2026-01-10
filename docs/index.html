@@ -14,6 +14,7 @@
         <img class="appicon" src="assets/appicon.png" alt="HabitsTracker icon" />
         <span>HabitsTracker</span>
       </div>
+
       <div class="nav-links">
         <a href="#features">Features</a>
         <a href="#screens">Screens</a>
@@ -31,8 +32,10 @@
         </p>
 
         <div class="cta">
-          <!-- Подставь ссылку на App Store после релиза -->
-          <a class="button primary" id="download" href="https://apps.apple.com/us/app/habitstracker-goal-tracker/id6756515590">Download on the App Store</a>
+          <a class="button primary" id="download"
+             href="https://apps.apple.com/us/app/habitstracker-goal-tracker/id6756515590">
+            Download on the App Store
+          </a>
         </div>
       </div>
 
@@ -75,11 +78,23 @@
 
     <section id="screens" class="section">
       <h2>Screens</h2>
-      <div class="screens">
+
+      <div class="screens" aria-label="App screenshots">
         <img src="assets/screen-1.png" alt="Screenshot 1" />
         <img src="assets/screen-2.png" alt="Screenshot 2" />
         <img src="assets/screen-3.png" alt="Screenshot 3" />
       </div>
+
+      <!-- Подсказка на мобильных: показывает, что есть несколько скринов и их можно листать -->
+      <div class="screens-hint" aria-hidden="true">
+        <span class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </span>
+        <span class="hint-text">Swipe →</span>
+      </div>
+
       <p class="note">
         Replace screenshots in <code>docs/assets/</code> with your App Store images.
       </p>
